@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import LineChart from '@/Tabs/TabContent/LineChart'
+import LineChart from '@/Tabs/TabContent1/LineChart'
 
 
 
@@ -32,12 +32,12 @@ export default {
 .tabContent1Wrap{
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   width : 100%;
   padding: 30px;
 }
 .tabContent1Left{
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

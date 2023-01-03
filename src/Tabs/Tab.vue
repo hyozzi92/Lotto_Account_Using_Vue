@@ -11,12 +11,12 @@
 <!--  <div class="tab1Content" v-if="tabNum == 0">-->
 <!--    <안녕하세요1>-->
 <!--  </div>-->
-  <div  ></div>
-  <div id="tabHeader" class="tabContent" v-if="tabNum == 0">
+  <div id="tabHeader" >
+  <div  class="tabContent" v-if="tabNum == 0">
   <TabContent1 />
   </div>
   <div  class="tab1Content" v-if="tabNum == 1">
-    안녕하세요2
+    <TabContent2/>
   </div>
   <div  class="tab2Content" v-if="tabNum == 2">
     안녕하세요3
@@ -26,12 +26,14 @@
   </div>
 
   </div>
+  </div>
 
 </template>
 
 <script>
 import {ref, onMounted, } from 'vue'
-import TabContent1 from '@/Tabs/TabContent/TabContent1'
+import TabContent1 from '@/Tabs/TabContent1/TabContent1'
+import TabContent2 from '@/Tabs/TabContent2/TabContent2'
 
 
 
@@ -40,6 +42,7 @@ export default {
   name: "TheTab",
   components : {
     TabContent1,
+    TabContent2,
   },
 
   data(){
@@ -80,6 +83,7 @@ export default {
   list-style: none;
   position:sticky;
   top: 0;
+
      }
 .tabContainer > li {
   padding: 10px;
@@ -95,9 +99,11 @@ export default {
   display:flex;
   width: 100%;
   margin-top: 30px;
-
 }
-
+#tabHeader {
+  display: flex;
+  width:100%
+}
 
 
 </style>

@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .chartWrap{
-  border: 1px solid black;
+
   width:60%;
 }
 .chart {
