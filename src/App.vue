@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-xl">
+  <Nav/>
+
+    <Carousel/>
+
+    <Tab/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav'
+import Carousel from './components/Carousel'
+import Tab from './Tabs/Tab'
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    Carousel,
+    Tab,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#app{
+  margin-top:30px;
+  height: 100vh;
+}
+.container-xl{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
 }
 </style>
